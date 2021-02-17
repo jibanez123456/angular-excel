@@ -11,17 +11,37 @@
 
   <table id="contactJs" class="table-contact">
     <tr class="thead">
-      <th>Name</th>
+      <th>Detalle Participante</th>
+      <th>Nombre</th>
+      <th>RFC-Clave</th>
+      <th>Region</th>
+      <th>Sucursal</th>
+      <th>Tipo Nomina</th>
+      <th>Tipo Contrato</th>
+      <th>Tipo Participante</th>
+      <th>Tipo Puesto</th>
+      <th>Fecha Ingreso</th>
+      <th>Aportacion Empleado</th>
+      <th>Aportacion Voluntaria</th>
       <th>E-mail</th>
-      <th>Phone</th>
-      <th>Address</th>
     </tr>
 
     <tr class="tbody" *ngFor="let contact of exportContacts; let odd = odd" [ngClass]="{'odd': odd}">
-      <td>{{contact?.name}}</td>
+      <td>{{contact?.detalleParticipante}}</td>
+      <td>{{contact?.nombre}}</td>
+      <td>{{contact?.rfcClave}}</td>
+      <td>{{contact?.region}}</td>
+      <td>{{contact?.sucursal}}</td>
+      <td>{{contact?.tipoNomina}}</td>
+      <td>{{contact?.tipoContrato}}</td>
+      <td>{{contact?.tipoParticipante}}</td>
+      <td>{{contact?.tipoPuesto}}</td>
+      <td>{{contact?.fechaIngreso}}</td>
+      <td>{{contact?.aportacionEmpleado}}</td>
+      <td>{{contact?.aportacionVoluntaria}}</td>
       <td>{{contact?.email}}</td>
-      <td>{{contact?.phone}}</td>
-      <td>{{contact?.address}}</td>
+
+
     </tr>
   </table>
 
@@ -39,16 +59,34 @@
 
   <table id="contactJs" class="table-contact">
     <tr class="thead">
-      <th>Name</th>
+      <th>Detalle Participante</th>
+      <th>Nombre</th>
+      <th>RFC-Clave</th>
+      <th>Region</th>
+      <th>Sucursal</th>
+      <th>Tipo Nomina</th>
+      <th>Tipo Contrato</th>
+      <th>Tipo Participante</th>
+      <th>Tipo Puesto</th>
+      <th>Fecha Ingreso</th>
+      <th>Aportacion Empleado</th>
+      <th>Aportacion Voluntaria</th>
       <th>E-mail</th>
-      <th>Phone</th>
-      <th>Address</th>
     </tr>
     <tr class="tbody" *ngFor="let contact of importContacts; let odd = odd" [ngClass]="{'odd': odd}">
-      <td>{{contact?.name}}</td>
+      <td>{{contact?.detalleParticipante}}</td>
+      <td>{{contact?.nombre}}</td>
+      <td>{{contact?.rfcClave}}</td>
+      <td>{{contact?.region}}</td>
+      <td>{{contact?.sucursal}}</td>
+      <td>{{contact?.tipoNomina}}</td>
+      <td>{{contact?.tipoContrato}}</td>
+      <td>{{contact?.tipoParticipante}}</td>
+      <td>{{contact?.tipoPuesto}}</td>
+      <td>{{contact?.fechaIngreso}}</td>
+      <td>{{contact?.aportacionEmpleado}}</td>
+      <td>{{contact?.aportacionVoluntaria}}</td>
       <td>{{contact?.email}}</td>
-      <td>{{contact?.phone}}</td>
-      <td>{{contact?.address}}</td>
     </tr>
   </table>
 

@@ -20,10 +20,19 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     for (let index = 0; index < 10; index++) {
       const contact = new Contact();
-      contact.name = faker.name.findName();
-      contact.phone = faker.phone.phoneNumber();
+      contact.detalleParticipante = faker.name.jobDescriptor();
+      contact.nombre = faker.name.findName();
+      contact.rfcClave = faker.random.number();
+      contact.region = faker.address.state();
+      contact.sucursal = faker.address.city();
+      contact.tipoNomina = faker.random.number();
+      contact.tipoContrato = faker.random.number();
+      contact.tipoParticipante = faker.random.number();
+      contact.tipoPuesto = faker.random.number();
+      contact.fechaIngreso = faker.date.past();
+      contact.aportacionEmpleado = faker.finance.amount();
+      contact.aportacionVoluntaria = faker.finance.amount();
       contact.email = faker.internet.email();
-      contact.address = faker.address.streetAddress();
       this.exportContacts.push(contact);
     }
 
